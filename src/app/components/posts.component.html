@@ -1,0 +1,4 @@
+<div *ngFor="let post of posts$ | async">
+  <pre>{{ post | json}}</pre>
+  <a [routerLink]="['/post', post.id]">Details</a>
+</div>

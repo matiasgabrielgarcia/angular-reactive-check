@@ -1,0 +1,4 @@
+<pre *ngIf="(post$ | async) == null">Loading...</pre>
+<pre *ngIf="(post$ | async) != null">{{ post$ | async | json}}</pre>
+
+<button (click)="back()">Back</button>
